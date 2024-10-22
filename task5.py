@@ -4,8 +4,8 @@
 # Пользоваться input()[::-1] запрещено!
 # Идея задачи реализовать алгоритм,
 # который будет работать для любого введенного натурального числа.
-N = int(input())
-s = str(N)
-a = [s[i] for i in range(len(s))]
-a = reversed(a)
-print("".join(a))
+def revers(N):
+    s = str(N)
+    a = [s[i] for i in range(len(s))]
+    a = reversed(a)
+    return("".join(a))
