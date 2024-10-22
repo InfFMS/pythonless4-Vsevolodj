@@ -28,4 +28,3 @@ def number_to_words(num):
         d = dec[num % 100 // 10]
         x += d + (d and ' ' or '') + dig[num % 10]
     return x
-print(number_to_words(79))
