@@ -26,6 +26,9 @@ def Rimskie(n):
     elif n>=5:
         n-=5
         return 'V'+Rimskie(n)
+    elif n==4:
+        n-=4
+        return 'IV'+Rimskie(n)
     else:
         n -= 1
         return 'I'+Rimskie(n)
