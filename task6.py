@@ -12,6 +12,5 @@ def drob(a,b):
     ma=1
     for value in range(1, max(a, b)+1):
         if a%value==0 and b%value==0:
-           max=value
+           ma=value
     return(a//ma, b//ma)
-print(drob(55,10))
