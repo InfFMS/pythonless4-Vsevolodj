@@ -5,7 +5,14 @@
 # Идея задачи реализовать алгоритм,
 # который будет работать для любого введенного натурального числа.
 def revers(N):
-    s = str(N)
-    a = [s[i] for i in range(len(s))]
-    a = reversed(a)
-    return("".join(a))
+    a = []
+    while N >=10:
+        a = a + [N%10]
+        N = N//10
+    a += [N]
+    a = str(a)
+    a = a[1:-1]
+    a = a.replace(", ","")
+    return(a)
+
+print(revers(56789))

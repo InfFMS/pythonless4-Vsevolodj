@@ -9,9 +9,9 @@ def is_valid_triangle(side1, side2, side3):
     summ=side1+side2+side3
     a=summ-ma-mi
     if ma>=mi+a:
-        print(False)
+        return(False)
     else:
-        print(True)
+        return(True)
 
 
 
