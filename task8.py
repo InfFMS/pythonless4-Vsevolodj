@@ -26,5 +26,4 @@ def prostmnozh(a):
     s = str(s)
     s = s.replace(", ", "*")
     return s[1:-1]
-# print(prostmnozh(378))
-
+print(prostmnozh(int(input())))
